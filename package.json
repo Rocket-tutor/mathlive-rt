@@ -1,7 +1,8 @@
 {
-  "name": "chloemathlive",
+  "name": "@rocket-tutor/mathlive",
   "version": "0.102.0",
   "description": "A web component for math input",
+  "private": false,
   "license": "MIT",
   "funding": {
     "type": "individual",
@@ -48,7 +49,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arnog/mathlive.git"
+    "url": "git+https://github.com/Rocket-tutor/mathlive-rt.git"
   },
   "bugs": "https://github.com/arnog/mathlive/issues/",
   "scripts": {
