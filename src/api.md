@@ -3607,7 +3607,7 @@ typically just uppercase and lowercase letters, and digits 0-9 in some cases.
 const version: object;
 ```
 
-Current version: `0.101.0`
+Current version: `0.102.0`
 
 The version string of the SDK using the [semver](https://semver.org/) convention:
 
@@ -3626,7 +3626,7 @@ The version string of the SDK using the [semver](https://semver.org/) convention
 ##### version.mathlive
 
 ```ts
-mathlive: string = '0.101.0';
+mathlive: string = '0.102.0';
 ```
 
 </MemberCard>
@@ -5769,7 +5769,7 @@ readonly `MenuItem`[]
 ##### MathfieldElement.registers
 
 ```ts
-get registers(): Readonly<Registers>
+get registers(): Registers
 ```
 
 TeX registers represent "variables" and "constants".
@@ -5802,7 +5802,7 @@ set registers(value): void
 
 • **value**: [`Registers`](#registers-2)
 
-`Readonly`\<[`Registers`](#registers-2)\>
+[`Registers`](#registers-2)
 
 </MemberCard>
 
@@ -6227,7 +6227,7 @@ static speakHook: (text) => void = defaultSpeakHook;
 ##### MathfieldElement.version
 
 ```ts
-static version: string = '0.101.0';
+static version: string = '0.102.0';
 ```
 
 </MemberCard>
@@ -6551,6 +6551,26 @@ set mode(value): void
 ```ts
 get name(): string
 ```
+
+`string`
+
+</MemberCard>
+
+<a id="placeholder" name="placeholder"></a>
+
+<MemberCard>
+
+##### MathfieldElement.placeholder
+
+```ts
+get placeholder(): string
+```
+
+```ts
+set placeholder(value): void
+```
+
+• **value**: `string`
 
 `string`
 
@@ -7793,7 +7813,7 @@ min-font-scale: number;
 
 </MemberCard>
 
-<a id="placeholder" name="placeholder"></a>
+<a id="placeholder-1" name="placeholder-1"></a>
 
 <MemberCard>
 
