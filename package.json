@@ -1,6 +1,6 @@
 {
   "name": "@rocket-tutor/mathlive",
-  "version": "0.103.0",
+  "version": "0.103.1",
   "description": "A web component for math input",
   "private": false,
   "license": "MIT",
