@@ -162,8 +162,8 @@ export class PromptAtom extends Atom {
     result.setStyle('height', base.height + vPadding, 'em');
     result.setStyle('top', base.depth - base.height, 'em');
     result.setStyle('vertical-align', base.depth + vPadding, 'em');
-    result.setStyle('margin-left', 0.5, 'em');
-    result.setStyle('margin-right', 0.5, 'em');
+    result.setStyle('margin-left', 0.6, 'em');
+    result.setStyle('margin-right', 2.2, 'em');
 
     if (this.caret) result.caret = this.caret;
 
