@@ -334,37 +334,37 @@ export function makeEditToolbar(
   }
 
   const actionsMarkup = {
-    undo: `<div class='action ${mathfield.canUndo === false ? 'disabled' : ''}'
-          data-command='"undo"'
-          data-tooltip='${l10n('tooltip.undo')}'>
-          <svg><use xlink:href='#svg-undo' /></svg>
-      </div>`,
-    redo: `<div class='action ${mathfield.canRedo === false ? 'disabled' : ''}'
-          data-command='"redo"'
-          data-tooltip='${l10n('tooltip.redo')}'>
-          <svg><use xlink:href='#svg-redo' /></svg>
-      </div>`,
-    cutToClipboard: `
-        <div class='action'
-            data-command='"cutToClipboard"'
-            data-tooltip='${l10n('tooltip.cut to clipboard')}'>
-            <svg><use xlink:href='#svg-cut' /></svg>
-        </div>
-    `,
-    copyToClipboard: `
-        <div class='action'
-            data-command='"copyToClipboard"'
-            data-tooltip='${l10n('tooltip.copy to clipboard')}'>
-            <svg><use xlink:href='#svg-copy' /></svg>
-        </div>
-    `,
-    pasteFromClipboard: `
-        <div class='action'
-            data-command='"pasteFromClipboard"'
-            data-tooltip='${l10n('tooltip.paste from clipboard')}'>
-            <svg><use xlink:href='#svg-paste' /></svg>
-        </div>
-    `,
+    // undo: `<div class='action ${mathfield.canUndo === false ? 'disabled' : ''}'
+    //       data-command='"undo"'
+    //       data-tooltip='${l10n('tooltip.undo')}'>
+    //       <svg><use xlink:href='#svg-undo' /></svg>
+    //   </div>`,
+    // redo: `<div class='action ${mathfield.canRedo === false ? 'disabled' : ''}'
+    //       data-command='"redo"'
+    //       data-tooltip='${l10n('tooltip.redo')}'>
+    //       <svg><use xlink:href='#svg-redo' /></svg>
+    //   </div>`,
+    // cutToClipboard: `
+    //     <div class='action'
+    //         data-command='"cutToClipboard"'
+    //         data-tooltip='${l10n('tooltip.cut to clipboard')}'>
+    //         <svg><use xlink:href='#svg-cut' /></svg>
+    //     </div>
+    // `,
+    // copyToClipboard: `
+    //     <div class='action'
+    //         data-command='"copyToClipboard"'
+    //         data-tooltip='${l10n('tooltip.copy to clipboard')}'>
+    //         <svg><use xlink:href='#svg-copy' /></svg>
+    //     </div>
+    // `,
+    // pasteFromClipboard: `
+    //     <div class='action'
+    //         data-command='"pasteFromClipboard"'
+    //         data-tooltip='${l10n('tooltip.paste from clipboard')}'>
+    //         <svg><use xlink:href='#svg-paste' /></svg>
+    //     </div>
+    // `,
   };
 
   // The right hand side of the toolbar, with the copy/undo/redo commands
