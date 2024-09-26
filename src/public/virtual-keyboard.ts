@@ -303,7 +303,7 @@ export interface VirtualKeyboardInterface extends VirtualKeyboardOptions {
   /** The content or selection of the mathfield has changed and the toolbar
    * may need to be updated accordingly
    */
-  updateToolbar(mf: MathfieldProxy): void;
+  // updateToolbar(mf: MathfieldProxy): void;
   update(mf: MathfieldProxy): void;
   connect(): void;
   disconnect(): void;

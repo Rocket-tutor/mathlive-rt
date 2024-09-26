@@ -313,65 +313,65 @@ function makeLayoutsToolbar(keyboard: VirtualKeyboard, index: number): string {
   return markup;
 }
 
-export function makeEditToolbar(
-  options: VirtualKeyboardOptions,
-  mathfield: MathfieldProxy
-): string {
-  let result = '';
-  const toolbarOptions = options.editToolbar;
-  if (toolbarOptions === 'none') return '';
+// export function makeEditToolbar(
+//   options: VirtualKeyboardOptions,
+//   mathfield: MathfieldProxy
+// ): string {
+//   // let result = '';
+//   // const toolbarOptions = options.editToolbar;
+//   // if (toolbarOptions === 'none') return '';
 
-  const availableActions: string[] = [];
+//   // const availableActions: string[] = [];
 
-  if (mathfield.selectionIsCollapsed)
-    availableActions.push('undo', 'redo', 'pasteFromClipboard');
-  else {
-    availableActions.push(
-      'cutToClipboard',
-      'copyToClipboard',
-      'pasteFromClipboard'
-    );
-  }
+//   // if (mathfield.selectionIsCollapsed)
+//   //   availableActions.push('undo', 'redo', 'pasteFromClipboard');
+//   // else {
+//   //   availableActions.push(
+//   //     'cutToClipboard',
+//   //     'copyToClipboard',
+//   //     'pasteFromClipboard'
+//   //   );
+//   // }
 
-  const actionsMarkup = {
-    // undo: `<div class='action ${mathfield.canUndo === false ? 'disabled' : ''}'
-    //       data-command='"undo"'
-    //       data-tooltip='${l10n('tooltip.undo')}'>
-    //       <svg><use xlink:href='#svg-undo' /></svg>
-    //   </div>`,
-    // redo: `<div class='action ${mathfield.canRedo === false ? 'disabled' : ''}'
-    //       data-command='"redo"'
-    //       data-tooltip='${l10n('tooltip.redo')}'>
-    //       <svg><use xlink:href='#svg-redo' /></svg>
-    //   </div>`,
-    // cutToClipboard: `
-    //     <div class='action'
-    //         data-command='"cutToClipboard"'
-    //         data-tooltip='${l10n('tooltip.cut to clipboard')}'>
-    //         <svg><use xlink:href='#svg-cut' /></svg>
-    //     </div>
-    // `,
-    // copyToClipboard: `
-    //     <div class='action'
-    //         data-command='"copyToClipboard"'
-    //         data-tooltip='${l10n('tooltip.copy to clipboard')}'>
-    //         <svg><use xlink:href='#svg-copy' /></svg>
-    //     </div>
-    // `,
-    // pasteFromClipboard: `
-    //     <div class='action'
-    //         data-command='"pasteFromClipboard"'
-    //         data-tooltip='${l10n('tooltip.paste from clipboard')}'>
-    //         <svg><use xlink:href='#svg-paste' /></svg>
-    //     </div>
-    // `,
-  };
+//   // const actionsMarkup = {
+//   //   undo: `<div class='action ${mathfield.canUndo === false ? 'disabled' : ''}'
+//   //         data-command='"undo"'
+//   //         data-tooltip='${l10n('tooltip.undo')}'>
+//   //         <svg><use xlink:href='#svg-undo' /></svg>
+//   //     </div>`,
+//   //   redo: `<div class='action ${mathfield.canRedo === false ? 'disabled' : ''}'
+//   //         data-command='"redo"'
+//   //         data-tooltip='${l10n('tooltip.redo')}'>
+//   //         <svg><use xlink:href='#svg-redo' /></svg>
+//   //     </div>`,
+//   //   cutToClipboard: `
+//   //       <div class='action'
+//   //           data-command='"cutToClipboard"'
+//   //           data-tooltip='${l10n('tooltip.cut to clipboard')}'>
+//   //           <svg><use xlink:href='#svg-cut' /></svg>
+//   //       </div>
+//   //   `,
+//   //   copyToClipboard: `
+//   //       <div class='action'
+//   //           data-command='"copyToClipboard"'
+//   //           data-tooltip='${l10n('tooltip.copy to clipboard')}'>
+//   //           <svg><use xlink:href='#svg-copy' /></svg>
+//   //       </div>
+//   //   `,
+//   //   pasteFromClipboard: `
+//   //       <div class='action'
+//   //           data-command='"pasteFromClipboard"'
+//   //           data-tooltip='${l10n('tooltip.paste from clipboard')}'>
+//   //           <svg><use xlink:href='#svg-paste' /></svg>
+//   //       </div>
+//   //   `,
+//   // };
 
-  // The right hand side of the toolbar, with the copy/undo/redo commands
-  result += availableActions.map((action) => actionsMarkup[action]).join('');
+//   // The right hand side of the toolbar, with the copy/undo/redo commands
+//   // result += availableActions.map((action) => actionsMarkup[action]).join('');
 
-  return result;
-}
+//   // return result;
+// }
 
 export function makeSyntheticKeycaps(elementList: NodeList): void {
   for (const element of elementList)
