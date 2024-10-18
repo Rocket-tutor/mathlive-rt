@@ -732,7 +732,17 @@ If you are using Vue, this may be because you are using the runtime-only build o
       expandMacro: false,
       defaultMode: this.options.defaultMode,
     });
-    if ('macros' in config || this.model.getValue() !== content) reparse(this);
+    if ('macros' in config || this.model.getValue() !== content) {
+      const selection = this.model.selection;
+      ModeEditor.insert(this.model, content, {
+        insertionMode: 'replaceAll',
+        selectionMode: 'after',
+        format: 'latex',
+        silenceNotifications: true,
+        mode: 'math',
+      });
+      this.model.selection = selection;
+    }
 
     if (
       'value' in config ||
